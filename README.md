@@ -40,9 +40,10 @@ Model Performance:
 2. Testing data Accuracy: 96%
 
 <p align="center">
-      <img src="acc_graph.png" title="Loss Graph" align="left" width="20%">
-      <img src="loss_graph.png" title="Accuracy Graph" align="right" width="20%">
+      <img src="acc_graph.png" title="Loss Graph" align="left" width="40%">
+      <img src="loss_graph.png" title="Accuracy Graph" align="right" width="40%">
 </p>
+
 
 ## [Model Testing]
 To test the model run the test model, it will generate confusion matrix of testing data:
