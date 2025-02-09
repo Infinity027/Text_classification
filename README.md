@@ -1,6 +1,6 @@
 # <div align="center">Character Classification</div>
 <p align="center">
-  ![characters](imagedraw.png 'characters')
+  ![characters](imagedraw.png "characters")
 </p>
 
 ---
