@@ -1,6 +1,6 @@
 # <div align="center">Character Classification</div>
 <p align="center">
-  ![characters](imagedraw.png "characters")
+  ![characters](imagedraw.png)
 </p>
 
 ---
@@ -38,7 +38,8 @@ python3 train.py --data_dir "data" --batch_size 32 --epoch 100
 Model Performance:
 1. Training data Accuracy: 96.43%
 2. Testing data Accuracy: 96%
-![Loss Graph](acc_graph.png 'Loss Graph' =50%x) ![Accuracy Graph](loss_graph.png 'Accuracy Graph' =50%x)
+Loss Graph | Accuracy Graph
+![Loss Graph](acc_graph.png =50%x) | ![Accuracy Graph](loss_graph.png =50%x)
 
 ## [Model Testing]
 To test the model run the test model, it will generate confusion matrix of testing data:
@@ -52,7 +53,7 @@ for character segmentation from text images, I used OpenCV. It involves preproce
 ```python
 python3 Segment.py --image_path "test/test.png" --c 4 --min_area 100 --draw_plot 0
 ```
-![Character Segmentation](result/line_1.png 'Character Segmentation')
+![Character Segmentation](result/line_1.png)
 
 Same 'character_recognition.py' python file extract the characters images from text image then sent it to model and predict the characters
 ```python
