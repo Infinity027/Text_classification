@@ -1,6 +1,6 @@
 # <div align="center">Character Classification</div>
 <p align="center">
-  <img alt="Characters" src="imagedraw.png" width="50%"/>
+  <img alt="Characters" src="imagedraw.png" title="Characters" width="50%"/>
 </p>
 
 ---
@@ -38,8 +38,11 @@ python3 train.py --data_dir "data" --batch_size 32 --epoch 100
 Model Performance:
 1. Training data Accuracy: 96.43%
 2. Testing data Accuracy: 96%
-Loss Graph | Accuracy Graph
-![Loss Graph](acc_graph.png) | ![Accuracy Graph](loss_graph.png)
+
+<p align="center">
+      <img src="acc_graph.png" title="Loss Graph" align="left">
+      <img src="loss_graph.png" title="Accuracy Graph" align="right">
+</p>
 
 ## [Model Testing]
 To test the model run the test model, it will generate confusion matrix of testing data:
