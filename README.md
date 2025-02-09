@@ -1,6 +1,6 @@
 # <div align="center">Character Classification</div>
 <p align="center">
-  ![characters](imagedraw.png)
+  <img alt="Characters" src="imagedraw.png" width="50%"/>
 </p>
 
 ---
@@ -39,7 +39,7 @@ Model Performance:
 1. Training data Accuracy: 96.43%
 2. Testing data Accuracy: 96%
 Loss Graph | Accuracy Graph
-![Loss Graph](acc_graph.png =50%x) | ![Accuracy Graph](loss_graph.png =50%x)
+![Loss Graph](acc_graph.png) | ![Accuracy Graph](loss_graph.png)
 
 ## [Model Testing]
 To test the model run the test model, it will generate confusion matrix of testing data:
