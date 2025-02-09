@@ -40,7 +40,7 @@ Model Performance:
 2. Testing data Accuracy: 96%
 
 
-<img src="acc_graph.png" title="Loss Graph" align="left" width="40%"> <img src="loss_graph.png" title="Accuracy Graph" align="right" width="40%">
+<img src="acc_graph.png" title="Loss Graph" align="left" width="50%"> <img src="loss_graph.png" title="Accuracy Graph" align="right" width="50%">
 
 
 ## [Model Testing]
