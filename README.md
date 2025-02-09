@@ -41,7 +41,7 @@ Model Performance:
 
 
 <img src="acc_graph.png" title="Loss Graph" align="left" width="50%"> <img src="loss_graph.png" title="Accuracy Graph" align="right" width="50%">
-
+<br/>
 
 ## [Model Testing]
 To test the model run the test model, it will generate confusion matrix of testing data:
