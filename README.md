@@ -39,10 +39,8 @@ Model Performance:
 1. Training data Accuracy: 96.43%
 2. Testing data Accuracy: 96%
 
-<p align="center">
-      <img src="acc_graph.png" title="Loss Graph" align="left" width="40%">
-      <img src="loss_graph.png" title="Accuracy Graph" align="right" width="40%">
-</p>
+
+<img src="acc_graph.png" title="Loss Graph" align="left" width="40%"> <img src="loss_graph.png" title="Accuracy Graph" align="right" width="40%">
 
 
 ## [Model Testing]
