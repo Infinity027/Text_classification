@@ -1,6 +1,6 @@
 # <div align="center">Character Classification</div>
 <p align="center">
-  ![characters](imagedraw.png)
+  ![characters](imagedraw.png 'characters')
 </p>
 
 ---
@@ -16,7 +16,7 @@
 ## [Description]
 
 This project is a deep learning-based character classification model that recognizes 80 different types of characters using convolutional neural networks (CNNs). The model is trained on a dataset of characters and can predict the class of a given character image with high accuracy.
-![Available Data for all classes(Training & Testing)](bargraph.png)
+![Available Data for all classes(Training & Testing)](bargraph.png 'Available Data for all classes(Training & Testing)')
 
 ## [Installation]
 1.Clone the Repository
@@ -38,7 +38,7 @@ python3 train.py --data_dir "data" --batch_size 32 --epoch 100
 Model Performance:
 1. Training data Accuracy: 96.43%
 2. Testing data Accuracy: 96%
-| ![Loss Graph](acc_graph.png) | ![Accuracy Graph](loss_graph.png) |
+![Loss Graph](acc_graph.png 'Loss Graph' =50%x) ![Accuracy Graph](loss_graph.png 'Accuracy Graph' =50%x)
 
 ## [Model Testing]
 To test the model run the test model, it will generate confusion matrix of testing data:
@@ -52,10 +52,10 @@ for character segmentation from text images, I used OpenCV. It involves preproce
 ```python
 python3 Segment.py --image_path "test/test.png" --c 4 --min_area 100 --draw_plot 0
 ```
-![result/line_1.png](acc_graph.png)
+![Character Segmentation](result/line_1.png 'Character Segmentation')
 
 Same 'character_recognition.py' python file extract the characters images from text image then sent it to model and predict the characters
 ```python
-python3 Segment.py --image_path "test/test.png" --c 4 --min_area 100 --draw_plot 0
+python3 character_recognition.py --image_path "test/test.png" --c 4 --model_path 'modelv0_1.pth' --draw_plot 0
 ```
 output: 'It was the best of times, it was the worst of times, it was tbe age of wisdom, it was the agc of foolishness '
