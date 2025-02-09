@@ -1,5 +1,7 @@
 # <div align="center">Character Classification</div>
-![characters](imagedraw.png)
+<p align="center">
+  ![characters](imagedraw.png)
+</p>
 
 ---
 
@@ -8,6 +10,7 @@
 2. [Installation](#installation)  
 3. [Model Training](#model-training)
 4. [Model Testing](#model-testing)
+5. [Text Segmentation](#text-segmentation)
 
 ---
 ## [Description]
@@ -35,8 +38,7 @@ python3 train.py --data_dir "data" --batch_size 32 --epoch 100
 Model Performance:
 1. Training data Accuracy: 96.43%
 2. Testing data Accuracy: 96%
-![Loss Graph](acc_graph.png)
-![Accuracy Graph](loss_graph.png)
+| ![Loss Graph](acc_graph.png) | ![Accuracy Graph](loss_graph.png) |
 
 ## [Model Testing]
 To test the model run the test model, it will generate confusion matrix of testing data:
@@ -44,3 +46,16 @@ To test the model run the test model, it will generate confusion matrix of testi
 python3 testpy --test_dir "data/test" --batch_size 32 --model_path 'Modelv0_1.pth'
 ```
 ![Confusion Matrix](confusion_matrix.png)
+
+## [Text Segmentaion]
+for character segmentation from text images, I used OpenCV. It involves preprocessing images, detecting text lines, segmenting words and characters, and using a trained deep learning model for recognition. run following code for character segmentation
+```python
+python3 Segment.py --image_path "test/test.png" --c 4 --min_area 100 --draw_plot 0
+```
+![result/line_1.png](acc_graph.png)
+
+Same 'character_recognition.py' python file extract the characters images from text image then sent it to model and predict the characters
+```python
+python3 Segment.py --image_path "test/test.png" --c 4 --min_area 100 --draw_plot 0
+```
+output: 'It was the best of times, it was the worst of times, it was tbe age of wisdom, it was the agc of foolishness '
